@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Dish illustration</title><desc id="desc">A warm illustration of a plated meal</desc>
+  <defs><radialGradient id="bg"><stop stop-color="#eaf0ff"/><stop offset="1" stop-color="#d5e1ff"/></radialGradient><filter id="shadow"><feGaussianBlur stdDeviation="18"/></filter></defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <path d="M0 90c118 40 173-20 287 4S485 152 800 59v541H0Z" fill="#f7f9ff" opacity=".56"/>
+  <ellipse cx="400" cy="345" rx="249" ry="162" fill="#233d82" opacity=".16" filter="url(#shadow)"/>
+  <ellipse cx="400" cy="314" rx="240" ry="158" fill="#ffffff"/>
+  <ellipse cx="400" cy="314" rx="211" ry="131" fill="#e6edff" stroke="#b8c9f2" stroke-width="4"/>
+  <ellipse cx="400" cy="314" rx="181" ry="107" fill="#c16b3d"/>
+  <path d="M251 312c40-48 90-52 133-22 51-46 100-40 162-7 21 38-24 75-76 90-44 13-124 5-170-8-37-11-68-31-49-53Z" fill="#e9b76f"/>
+  <path d="M275 307c22-13 57-22 84-10m16-1c17-10 51-16 74-5m20 15c18-6 39-6 56 2" fill="none" stroke="#fff1cb" stroke-width="8" stroke-linecap="round" opacity=".65"/>
+  <path d="M335 278c-24-45 9-57 36-63-4 39-14 61-36 63Zm134 71c29-37 51-33 70-20-24 22-44 30-70 20Z" fill="#65805a"/>
+  <circle cx="323" cy="343" r="7" fill="#a33d2a"/><circle cx="421" cy="270" r="6" fill="#a33d2a"/><circle cx="493" cy="325" r="6" fill="#a33d2a"/>
+  <text x="400" y="548" fill="#3156b4" font-family="Georgia,serif" font-size="32" letter-spacing="7" text-anchor="middle">4 TO 9</text>
+</svg>

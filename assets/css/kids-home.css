@@ -1,0 +1,121 @@
+body .kids-section {
+    position: relative;
+    overflow: hidden;
+    background: radial-gradient(circle at 4% 10%, #fff 0, transparent 39%), linear-gradient(135deg, #ecf3ff, #dfeaff);
+    padding: clamp(4.5rem, 8vw, 7rem) 0;
+}
+.kids-section::before,
+.kids-section::after {
+    position: absolute;
+    content: "";
+    border: 1px solid rgba(52, 99, 178, .11);
+    border-radius: 50%;
+    pointer-events: none;
+}
+.kids-section::before { width: 460px; height: 460px; top: -240px; left: -180px; }
+.kids-section::after { width: 560px; height: 560px; right: -230px; bottom: -330px; }
+.kids-layout {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+    align-items: center;
+    gap: clamp(2.5rem, 7vw, 7rem);
+}
+.kids-intro .eyebrow { display: inline-flex; align-items: center; gap: .55rem; }
+.kids-intro .eyebrow i { font-size: 1.05rem; }
+.kids-intro h2 {
+    color: var(--dark-blue);
+    font-size: clamp(3rem, 4.9vw, 5.2rem);
+    font-weight: 500;
+    letter-spacing: -.055em;
+    line-height: 1.1;
+    margin: 1rem 0 1.35rem;
+}
+.kids-intro h2 em { color: var(--primary-blue); font-weight: 400; }
+.kids-intro > p { color: var(--text-gray); font-size: 1.05rem; line-height: 1.8; max-width: 32rem; }
+.kids-highlights { display: flex; flex-wrap: wrap; gap: .65rem; margin: 1.7rem 0 2rem; }
+.kids-highlights span {
+    display: inline-flex;
+    align-items: center;
+    gap: .45rem;
+    background: rgba(255, 255, 255, .72);
+    border: 1px solid #cadbf8;
+    border-radius: 999px;
+    color: var(--dark-blue);
+    font-size: .78rem;
+    font-weight: 700;
+    padding: .55rem .75rem;
+}
+.kids-highlights i { color: var(--primary-blue); font-size: .9rem; }
+.kids-intro .btn-hero { display: inline-flex; align-items: center; gap: .6rem; }
+.kids-showcase { min-width: 0; }
+.kids-showcase__image {
+    position: relative;
+    height: clamp(260px, 28vw, 360px);
+    overflow: hidden;
+    background: #cbdcf7;
+    border-radius: 170px 170px 16px 16px;
+    box-shadow: 14px 14px 0 rgba(80, 125, 205, .15);
+}
+.kids-showcase__image img { width: 100%; height: 100%; object-fit: cover; }
+.kids-showcase__badge {
+    position: absolute;
+    bottom: 4rem;
+    left: 1.2rem;
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
+    background: rgba(255, 255, 255, .94);
+    border: 1px solid rgba(255, 255, 255, .8);
+    border-radius: 999px;
+    box-shadow: 0 6px 16px rgba(17, 46, 94, .12);
+    color: var(--dark-blue);
+    font-size: .75rem;
+    font-weight: 700;
+    padding: .55rem .8rem;
+}
+.kids-showcase__badge i { color: var(--primary-blue); }
+.kids-showcase__list {
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    border: 1px solid #ceddf7;
+    border-radius: 14px;
+    box-shadow: 0 22px 50px rgba(21, 56, 114, .12);
+    margin: -2rem 1.25rem 0;
+    padding: .55rem 1rem;
+}
+.kids-dish {
+    display: grid;
+    grid-template-columns: 54px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: .8rem;
+    min-height: 67px;
+    color: var(--dark-blue);
+    text-decoration: none;
+}
+.kids-dish + .kids-dish { border-top: 1px solid #edf1fa; }
+.kids-dish:hover,
+.kids-dish:focus-visible { color: var(--primary-blue); }
+.kids-dish:focus-visible { outline: 3px solid var(--focus-blue); outline-offset: 2px; border-radius: 6px; }
+.kids-dish img { width: 46px; height: 46px; border-radius: 9px; object-fit: cover; }
+.kids-dish__name { font-size: .88rem; font-weight: 700; line-height: 1.3; }
+.kids-dish__price { font-size: .81rem; font-weight: 800; white-space: nowrap; }
+
+@media (max-width: 991px) {
+    .kids-layout { grid-template-columns: 1fr; gap: 2.6rem; }
+    .kids-showcase { max-width: 670px; width: 100%; margin: 0 auto; }
+    .kids-intro > p { max-width: 42rem; }
+}
+@media (max-width: 640px) {
+    body .kids-section { padding: 4rem 0 4.6rem; }
+    .kids-intro h2 { font-size: clamp(2.8rem, 11vw, 4rem); }
+    .kids-showcase__image { height: 255px; border-radius: 120px 120px 12px 12px; box-shadow: 8px 8px 0 rgba(80, 125, 205, .15); }
+    .kids-showcase__badge { bottom: 2.6rem; left: .8rem; font-size: .66rem; padding: .45rem .6rem; }
+    .kids-showcase__list { margin: -1.2rem .45rem 0; padding: .35rem .7rem; }
+    .kids-dish { grid-template-columns: 43px minmax(0, 1fr) auto; gap: .55rem; min-height: 62px; }
+    .kids-dish img { width: 40px; height: 40px; }
+    .kids-dish__name { font-size: .8rem; }
+    .kids-dish__price { font-size: .74rem; }
+}
